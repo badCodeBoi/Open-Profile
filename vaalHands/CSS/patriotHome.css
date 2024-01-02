@@ -1,0 +1,107 @@
+/* Global styles */
+body {
+    background-color: lightgreen;
+    margin: 40px;
+    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+}
+
+a:link, a:visited {
+    background-color: blue;
+    color: wheat;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: medium;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover, a:active {
+    background-color: blueviolet;
+}
+
+#center {
+    text-align: center;
+    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+}
+
+input[type=text], input[type=password], select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid brown;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Form input styles */
+textarea {
+    font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', sans-serif;
+    font-size: medium;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: yellowgreen;
+    color: white;
+    padding: 14px 20px;
+    margin: 1px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: medium;
+    transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover {
+    background-color: yellow;
+}
+
+/* Header styles */
+h1, h2, h3 {
+    text-align: center;
+    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+}
+
+/* Paragraph styles */
+p {
+    font-size: small;
+    color: red;
+}
+
+/* Margin container styles */
+#margin {
+    margin-top: 20px;
+    background-color: wheat;
+    margin: 0 auto; /* Center the margin container horizontally */
+    max-width: 1000px; /* Adjust as needed */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Box styles */
+#box {
+    width: 80%;
+    margin: 40px auto;
+    border: 15px solid black;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer styles */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+    color: wheat;
+    text-align: center;
+    padding: 10px;
+    border-top-right-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

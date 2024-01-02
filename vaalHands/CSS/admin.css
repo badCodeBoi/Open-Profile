@@ -1,0 +1,97 @@
+body
+{
+background-color: lightgreen;
+margin: 30px;
+}
+h1{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+h2
+{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+a:link, a:visited
+{
+background-color: blue;
+color: wheat;
+padding: 14px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+}
+a:hover
+{
+    background-color: blueviolet;
+    color: brown;
+}
+#center 
+{
+    text-align: center;
+}
+input[type=text], select
+{
+width: 10%;
+padding: 8px 10px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid brown;
+border-radius: 2px;
+box-sizing: border-box;
+}
+input[type=submit]
+{
+    width: 20%;
+    background-color: blueviolet;
+    color: wheat;
+    padding: 14px 20px;
+    margin: 1px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]
+{
+    background-color: brown;
+}
+table,th ,td
+{
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 35%;
+    height: 20px;
+    text-align: center;
+    padding: 5px;
+}
+#box
+{
+    width: 1680px;
+    border: 15px solid black;
+    padding: 40px;
+    margin: 40px;
+    align-items: center;
+}
+.footer
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+    color: wheat;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  

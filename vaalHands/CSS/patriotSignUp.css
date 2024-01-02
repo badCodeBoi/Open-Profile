@@ -1,0 +1,113 @@
+/* Global styles */
+body {
+  background-color: lightgreen;
+  margin: 50px;
+  font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+}
+
+a:link, a:visited {
+  background-color: blue;
+  color: wheat;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+a:hover, a:active {
+  background-color: blueviolet;
+}
+
+h1, h3, h4 {
+  text-align: center;
+}
+
+input[type=submit] {
+  width: 17%;
+  background-color: blueviolet;
+  color: wheat;
+  padding: 14px 20px;
+  margin: 1px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover {
+  background-color: brown;
+}
+
+#center {
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+  color: red;
+}
+
+/* Form styles */
+fieldset {
+  background-color: wheat;
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 600px;
+  font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+  border: 1px solid black;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Box styles */
+#box {
+  width: 80%;
+  margin: 40px auto;
+  border: 15px solid black;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer styles */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  color: wheat;
+  text-align: center;
+  padding: 10px;
+  border-top-right-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Form input styles */
+input[type=text], input[type=password], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid wheat;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  input[type=submit], input[type=text], input[type=password], select {
+      width: 100%;
+  }
+
+  #box {
+      width: 95%;
+      margin: 20px auto;
+  }
+}
