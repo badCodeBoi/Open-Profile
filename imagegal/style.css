@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Myriad Pro', sans-serif;
+    background-color: #b11b1b;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: radial-gradient(circle, #89e894, #ff6161);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.web-description {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#imageGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-column {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.image-item {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-item:hover {
+    transform: scale(1.05);
+}
+
+.image-item:hover img {
+    filter: blur(3px);
+    opacity: 0.5;
+}
+
+.image-location {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle, #89e894, #ff6161);
+    padding: 5px;
+    margin: 0;
+    border-bottom-right-radius: 8px;
+}
+
+.image-details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: radial-gradient(circle, #89e894, #4499aa);
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .image-column {
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .image-column {
+        width: 30%;
+    }
+}

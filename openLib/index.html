@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Open Library</h1>
+            <div class="options">
+                <button onclick="showAddBook()">Add a Book</button>
+                <button onclick="showDisplayInfo()">Display Book Info</button>
+                <button onclick="showSearchBooks()">Search/Check Books</button>
+                <button onclick="exitApp()">Exit App</button>
+            </div>
+        </header>
+
+        <div id="addBook" class="hidden">
+            <h2>Add a Book</h2>
+            <label for="category">Pick a category:</label>
+            <select id="category">
+                <option value="computers">Computers</option>
+                <option value="humanities">Humanities</option>
+                <option value="electrical">Electrical</option>
+                <option value="mechanical">Mechanical</option>
+            </select>
+
+            <div id="computerCategory" class="hidden">
+                <h3>Choose a computer category</h3>
+                <select id="computerBooks">
+                    <option value="introToC">Introduction to C</option>
+                    <option value="introToPython">Introduction to Python</option>
+                    <option value="introToR">Introduction to R Programming</option>
+                </select>
+            </div>
+
+            <!-- Form for entering book details -->
+        </div>
+
+        <div id="displayInfo" class="hidden">
+            <h2>Display Book Info</h2>
+            <!-- Content for displaying book information goes here -->
+        </div>
+
+        <div id="searchBooks" class="hidden">
+            <h2>Search/Check Books</h2>
+            <label for="bookCode">Enter the book code:</label>
+            <input type="text" id="bookCode" placeholder="Book Code">
+            <button onclick="checkBookAvailability()">Search</button>
+            <p id="availabilityResult"></p>
+        </div>
+
+        <div id="exitApp" class="hidden">
+            <h2>Exit App</h2>
+            <p>Have a nice day!</p>
+        </div>
+
+        <section id="images">
+            <h2>Images</h2>
+            <!-- Placeholder images, replace with actual image paths -->
+            <img src="1.png" alt="Image 1">
+            <img src="2.png" alt="Image 2">
+            <img src="3.png" alt="Image 3">
+            
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
